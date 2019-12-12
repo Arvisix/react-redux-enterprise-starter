@@ -18,10 +18,10 @@ import history from 'utils/history';
 import 'sanitize.css/sanitize.css';
 
 // Import root app
-import App from 'containers/App';
+import App from 'modules/App';
 
 // Import Language Provider
-import LanguageProvider from 'containers/LanguageProvider';
+import LanguageProvider from 'modules/LanguageProvider';
 
 // Load the favicon and the .htaccess file
 import '!file-loader?name=[name].[ext]!./images/favicon.ico';
@@ -64,7 +64,7 @@ if (module.hot) {
   module.hot.accept(['./i18n', './containers/App'], () => {
     ReactDOM.unmountComponentAtNode(MOUNT_NODE);
     // tslint:disable-next-line:max-line-length
-    const App = require('./containers/App').default; // https://github.com/webpack/webpack-dev-server/issues/100
+    const App = require('./modules/App').default; // https://github.com/webpack/webpack-dev-server/issues/100
     render(translationMessages, App);
   });
 }

@@ -1,6 +1,6 @@
 import { Reducer, Store } from 'redux';
 import { RouterState } from 'connected-react-router';
-import { ContainerState as LanguageProviderState } from 'containers/LanguageProvider/types';
+import { ContainerState as LanguageProviderState } from 'modules/LanguageProvider/types';
 
 export interface InjectedStore extends Store {
   injectedReducers: any;
