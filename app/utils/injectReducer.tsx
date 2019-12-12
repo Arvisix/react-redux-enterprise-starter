@@ -3,7 +3,7 @@ import hoistNonReactStatics from 'hoist-non-react-statics';
 import { useStore } from 'react-redux';
 
 import { getInjectors } from './reducerInjectors';
-import { InjectReducerParams, InjectedStore } from 'types';
+import { InjectReducerParams, InjectedStore } from 'modules/App/types';
 
 /**
  * Dynamically injects a reducer

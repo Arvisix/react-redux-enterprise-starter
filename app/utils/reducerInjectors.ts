@@ -5,7 +5,7 @@ import isString from 'lodash/isString';
 
 import checkStore from './checkStore';
 import createReducer from '../reducers';
-import { InjectedStore } from 'types';
+import { InjectedStore } from 'modules/App/types';
 import { Reducer } from 'redux';
 
 export function injectReducerFactory(store: InjectedStore, isValid: boolean = false) {

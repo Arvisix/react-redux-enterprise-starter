@@ -8,7 +8,7 @@ import history from '../../utils/history';
 import configureStore from '../../configureStore';
 
 import { getInjectors, injectReducerFactory } from '../reducerInjectors';
-import { InjectedStore } from '../../types';
+import { InjectedStore } from 'modules/App/types';
 import { AnyAction, Reducer } from 'redux';
 
 const initialState = { reduced: 'soon' };

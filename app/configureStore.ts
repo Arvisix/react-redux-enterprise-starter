@@ -7,7 +7,7 @@ import { applyMiddleware, createStore } from 'redux';
 import { routerMiddleware } from 'connected-react-router';
 import createSagaMiddleware from 'redux-saga';
 import createReducer from './reducers';
-import { InjectedStore, ApplicationRootState } from 'types';
+import { InjectedStore, ApplicationRootState } from 'modules/App/types';
 import { History } from 'history';
 
 
